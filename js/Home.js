@@ -89,12 +89,7 @@ var Home=React.createClass({
 							<p>Communicatng with Etsy's API</p>
 							<a target="_blank" href="https://github.com/noushka86/estsy">Check the code on GitHub</a>
 						</div>
-						<div className="project" id="soundcloud">
-							<a target="_blank" href="http://soundCloud-clone.noaiolin.com/"><img src="./images/etsy.png"></img></a>
-							<h5>SoundCloud Clone</h5>
-							<p>Communicatng with SoundCloud's API</p>
-							<a target="_blank" href="https://github.com/noushka86/soundCloud/">Check the code on GitHub</a>
-						</div>
+					
 					</div>
 				</div>
 				
@@ -137,6 +132,14 @@ var Home=React.createClass({
 			)
 	}
 })
+
+
+//	<div className="project" id="soundcloud">
+//							<a target="_blank" href="http://soundCloud-clone.noaiolin.com/"><img src="./images/etsy.png"></img></a>
+//							<h5>SoundCloud Clone</h5>
+//							<p>Communicatng with SoundCloud's API</p>
+//							<a target="_blank" href="https://github.com/noushka86/soundCloud/">Check the code on GitHub</a>
+//						</div>
 
 
 
