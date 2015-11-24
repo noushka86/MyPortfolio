@@ -47,23 +47,24 @@ var Home=React.createClass({
 
 				<div id="proj-container">
 					<h3>My Projects</h3>
+					<h5>-- Click on the image to visit the project --</h5>
 					<div id="projects">
 						<div className="project" id="smartsit">
 						<a target="_blank" href="http://www.smartsit.net/"><img src="./images/sitter.png"></img></a>
-							<p>SmartSit</p>
+							<h5>SmartSit</h5>
 							<p>Baby-sitter Management/scheduling app</p>
 							<a target="_blank" href="https://github.com/noushka86/EventSitter">Check the code on GitHub</a>
 						</div>
 						<div className="project" id="weather">
-								<a target="_blank" href="http://above-the-clouds.noaiolin.com/"><img src="./images/weather.png"></img></a>
-							<p>Above The Clouds</p>
-							<p>Weather App</p>
+							<a target="_blank" href="http://above-the-clouds.noaiolin.com/"><img src="./images/weather.png"></img></a>
+							<h5>Above The Clouds</h5>
+							<p>Communicating with Google's & forecast.io APIs</p>
 							<a target="_blank" href="https://github.com/noushka86/weather-app">Check the code on GitHub</a>
 
 						</div>
 						<div className="project" id="clock">
-							<img src="./images/clock.png"></img>
-							<p>Color Clock</p>
+							<a target="_blank" href="http://color-clock.noaiolin.com/"><img src="./images/clock.png"></img></a>
+							<h5>Color Clock</h5>
 							<p>Representing hex colors as a function of time</p>
 							<a target="_blank" href="https://github.com/noushka86/colorClock">Check the code on GitHub</a>
 
@@ -71,28 +72,27 @@ var Home=React.createClass({
 						
 						<div className="project" id="git">
 						<a target="_blank" href="http://git-profile-lookup.noaiolin.com/"><img src="./images/git.png"></img></a>
-							<p>GitHub Profile Lookup</p>
+							<h5>GitHub Profile Lookup</h5>
 							<p>GitHub Profile Lookup</p>
 							<a target="_blank" href="https://github.com/noushka86/gitProfile">Check the code on GitHub</a>
 						</div>
 						<div className="project" id="invaders">
 							<a target="_blank" href="http://git-profile-lookup.noaiolin.com/"><img src="./images/southpark.png"></img></a>
-							<p>South Park Invaders</p>
-							<p>Just for fun!
-							<span><br>Fun Project-Space Invaders game in the form of Kenny and Cartman</br></span>
+							<h5>South Park Invaders</h5>
+							<p>Space Invaders game with Kenny and Cartman
 							</p>
 							<a target="_blank" href="https://github.com/noushka86/gitProfile">Check the code on GitHub</a>
 						</div>
 						<div className="project" id="etsy">
 							<a target="_blank" href="http://etsy-clone.noaiolin.com/"><img src="./images/etsy.png"></img></a>
-							<p>Etsy Clone</p>
-							<p>Etsy Clone</p>
+							<h5>Etsy Clone</h5>
+							<p>Communicatng with Etsy's API</p>
 							<a target="_blank" href="https://github.com/noushka86/estsy">Check the code on GitHub</a>
 						</div>
 						<div className="project" id="soundcloud">
 							<a target="_blank" href="http://soundCloud-clone.noaiolin.com/"><img src="./images/etsy.png"></img></a>
-							<p>SoundCloud Clone</p>
-							<p>SoundCloud Clone</p>
+							<h5>SoundCloud Clone</h5>
+							<p>Communicatng with SoundCloud's API</p>
 							<a target="_blank" href="https://github.com/noushka86/soundCloud/">Check the code on GitHub</a>
 						</div>
 					</div>
@@ -110,7 +110,9 @@ var Home=React.createClass({
 							<br></br>
 							<br></br>
 							During the course of the last year, I had moved from Israel, to Houston, Texas. Here I have decided to make a career change, and transition from Cyber security into front end software development. Enabling this change was when I have successfully completed a 12 weeks coding boot camp at the Iron Yard of Houston, where I have acquired front end development capabilities such as Javascript, React, Backbone, responsive design, and have also completed a practical project, that I have fully developed myself (smartsit.net)
-							At present, I am learning new development skills such as Meteor, ruby, Angular and Ember.
+							<br></br>
+							<br></br>
+								At present, I am learning by myself new development skills such as Meteor, ruby, Angular and Ember.
 							<br></br>
 							<br></br>
 							I believe that I have a lot to give to a new place that will employ me as a developer, as I am a very passionate person, that loves to think out of the box and puts in everything I have until the task gets completed. 
