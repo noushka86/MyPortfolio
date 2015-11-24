@@ -1,0 +1,300 @@
+
+@import "../bower_components/normalize-css/normalize.css";
+@import "../bower_components/typeplate-starter-kit/css/typeplate.css";
+
+/**
+ * BOX-SIZING
+ */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity, transform, color, background-color, border-color, z-index, background-image;
+    transition-timing-function: ease;
+}
+
+/**
+ * GRIDS
+ */
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    > * {
+        flex: 1;
+        flex-basis: 100%;
+    }
+}
+
+@define-mixin grid_r $col, $width {
+    @media only screen and (min-width: $(width)px) {
+        .grid-$(col)-$(width) {
+            & > * {
+                flex-basis: calc(100 / $col)%;
+            }
+            @mixin-content;
+        }
+    }
+}
+
+@define-mixin grid $col {
+    .grid-$(col) {
+        & > * {
+            flex-basis: calc(100 / $col)%;
+        }
+        @mixin-content;
+    }
+}
+
+@mixin grid 2 {}
+@mixin grid 4 {}
+@mixin grid 6 {}
+
+@mixin grid_r 2, 400 {}
+@mixin grid_r 2, 800 {}
+
+@mixin grid_r 4, 400 {}
+@mixin grid_r 4, 800 {}
+
+/**
+ * GENERAL
+ */
+
+img {
+    max-width: 100%;
+}
+/**
+ * YOUR CODE HERE
+ */
+
+
+
+#hero{
+
+    height: 500px;
+    border:1px solid black;
+    background-image: -webkit-linear-gradient(315deg, rgba(30, 33, 33, 0.81) 1%, rgba(32, 32, 32, 0.09) 98%), url("./images/hero.jpg");
+    background-image: linear-gradient(135deg, rgba(30, 33, 33, 0.81) 1%, rgba(32, 32, 32, 0.09) 98%), url("./images/hero.jpg");
+ 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    background-position: 0px 0px, 50% 50%;
+
+    #navbar{
+        height:90px;
+        position: relative;
+
+
+
+       #title{
+        position: absolute;
+        left:3%;
+        top:10%;
+
+
+        h4{
+        color: white;
+        font-family: Lora, sans-serif;
+        font-weight: normal;
+
+        }
+
+        h5{
+            color:#5cc475;
+            font-family: Lora, sans-serif;
+            font-weight: normal;
+        }
+
+    }
+
+
+}
+
+    #moto{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+
+        h1,h3{
+            color: white;
+            font-weight: 200;
+
+
+        }
+        h1{
+            font-family: Lora, sans-serif;
+        }
+
+        h3{
+            color: #b7babf;
+            font-weight: 200;
+            font-family: Oxygen, sans-serif;        
+        }
+    }
+}
+
+
+#technical{
+    text-align: center;
+        padding-top: 30px;
+        h3{
+            font-family: Lora, sans-serif;
+            color:#5cc475;
+            font-weight: 200;
+
+        }
+
+#tech
+{       
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+
+
+     p{
+       font-family: Lora, sans-serif;
+        margin:30px;
+        width:140px;
+    }
+}
+}
+
+#proj-container{
+    text-align: center;
+    background-color: #f7f7f7;
+    border-top:2px solid #e0e0e0;
+    padding-top: 30px;
+    border-bottom:2px solid #e0e0e0;
+
+
+
+    h3{
+        font-family: Lora, sans-serif;
+        font-weight: 200;
+        color:#5cc475;
+
+    }
+
+#projects{
+    display: flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+    justify-content:center;
+
+    .project{
+        width:295px;
+        border: 1px solid #cacaca;
+        margin: 30px;
+        background-color: white;
+
+
+        img{
+            display: block;
+            border-bottom: 1px solid #cacaca;
+            width: 100%;
+            height: 150px;
+            background-position: center top;
+            background-size: cover;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+
+}
+
+}
+
+
+#about-me{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    h3{
+        font-family: Lora, sans-serif;
+        font-weight: 200;
+        color:#5cc475;
+        margin-bottom:30px;
+
+
+    }
+
+    div{
+        margin:0 auto;
+        max-width: 990px;
+        text-align: left;
+
+
+
+        img{
+            display: inline-block;
+            width:300px;
+            height: 450px;
+            vertical-align: top;
+            margin-bottom: 50px;
+
+        }
+
+        p{  
+            margin-left: 4%;  
+            display: inline-block;
+            max-width: 650px;
+            font-size: 18px;
+
+        }
+}
+}
+
+#contact{
+
+    text-align: center;
+    background-color: #f7f7f7;
+    border-top:2px solid #e0e0e0;
+    padding-bottom: 40px;
+
+
+    h3{
+        margin-top: 30px;
+        font-family: Lora, sans-serif;
+        font-weight: 200;
+        color:#5cc475;
+
+
+    }
+
+    p{
+        font-size: 18px;
+        font-family: Lora, sans-serif;
+
+    }
+
+    img{
+        vertical-align: bottom;
+        margin-top: 30px;
+    }
+
+    #email{
+    margin-bottom: -2px;
+}
+
+    #gitgirl{
+       margin-bottom: -5px; 
+    }
+}
+
+
+p+p {
+    text-indent: 0;
+    margin: 0;
+}
