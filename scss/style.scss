@@ -139,7 +139,10 @@ img {
         h3{
             color: #b7babf;
             font-weight: 200;
-            font-family: Oxygen, sans-serif;        
+            font-family: Oxygen, sans-serif;   
+            color: #dd783f;
+            margin-top: 50px;
+     
         }
     }
 }
@@ -160,12 +163,14 @@ img {
     display: flex;
     flex-wrap:wrap;
     text-align: center;
-
+    margin: 0 auto;
+    justify-content:center;
 
      p{
        font-family: Lora, sans-serif;
         margin:30px;
         width:140px;
+
     }
 }
 }
@@ -186,17 +191,27 @@ img {
 
     }
 
+    h5{
+        font-family: Oxygen, sans-serif; 
+        color: #747474;
+        font-weight: normal;
+        font-size: 15px;
+    }
+
 #projects{
     display: flex;
     flex-wrap:wrap;
     margin:0 auto;
     justify-content:center;
+    text-align: center;
 
     .project{
         width:295px;
         border: 1px solid #cacaca;
         margin: 30px;
         background-color: white;
+
+
 
 
         img{
@@ -208,7 +223,31 @@ img {
             background-size: cover;
             margin-top: 0px;
             margin-bottom: 0px;
+
         }
+
+
+        h5{
+            margin-top: 10px;
+             font-family: Lora, sans-serif;
+
+
+
+        }
+
+        p{
+            font-family: Oxygen, sans-serif; 
+            font-size:13px; 
+ 
+
+
+        }
+
+        a{
+            bottom: 0;
+        }
+
+
     }
 
 }
